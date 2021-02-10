@@ -5,28 +5,28 @@ public class JavaProgramming {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your year of birth: ");
+        int counter = 0;
+        int sum = 0;
 
-        boolean hasNextInt = scanner.hasNextInt();
+        while(true){
+            int order = counter + 1;
+            System.out.println("Enter number #" + order + ":");
 
-        if(hasNextInt){
-            int yearOfBirth = scanner.nextInt();
-            scanner.nextLine(); // handle next line characterq
+            boolean isAnInt = scanner.hasNextInt();
 
-            System.out.println("Enter your name: ");
-            String name = scanner.nextLine();
-
-            int age = 2021 - yearOfBirth;
-
-            if(age >= 0 && age <= 100){
-                System.out.println("Your name is " + name + ", and you are " + age + " years old.");
-            }else {
-                System.out.println("invalid year of birth");
+            if(isAnInt){
+                int number = scanner.nextInt();
+                counter++;
+                sum += number;
+                if(counter == 10){
+                    break;
+                }
+                scanner.nextLine();
+            }else{
+                System.out.println("invalid number");
             }
-        } else{
-            System.out.println("Unable to parse year of birth.");
         }
-
+        System.out.println("sum = " + sum);
         scanner.close();
     }
 }
