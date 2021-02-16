@@ -1,20 +1,30 @@
 public class BankAccount {
 
     // fields //
-    private int accountNumber,balance, phoneNumber;
-    private String customerName, email;
+    private double balance;
+    private String customerName, email, accountNumber, phoneNumber;
+
+    // Constructors //
+
+    public BankAccount(){
+        System.out.println("Empty constructor called");
+    }
+
+    public BankAccount(double balance, String customerName, String email, String accountNumber, String phoneNumber){
+
+    }
 
     // methods //
 
         //setters //
 
-    public void setAccountNumber(int accountNumber){
+    public void setAccountNumber(String accountNumber){
         this.accountNumber = accountNumber;
     }
-    public void setBalance(int balance){
+    public void setBalance(double balance){
         this.balance = balance;
     }
-    public void setPhoneNumber(int phoneNumber){
+    public void setPhoneNumber(String phoneNumber){
         this.phoneNumber = phoneNumber;
     }
     public void setCustomerName(String customerName){
@@ -26,13 +36,13 @@ public class BankAccount {
 
         // getters //
 
-    public int getAccountNumber(int accountNumber){
+    public String getAccountNumber(String accountNumber){
         return accountNumber;
     }
-    public int getBalance(int balance){
+    public double getBalance(double balance){
         return balance;
     }
-    public int getPhoneNumber(int phoneNumber){
+    public String getPhoneNumber(String phoneNumber){
         return phoneNumber;
     }
     public String getCustomNumber(String customerName){
@@ -44,7 +54,7 @@ public class BankAccount {
 
         // Special Methods //
 
-    public int depositFunds(int deposit){
+    public double depositFunds(double deposit){
         if(deposit > 0 ){
             balance += deposit;
             System.out.println("\n" +
@@ -55,7 +65,7 @@ public class BankAccount {
         return balance;
     }
 
-    public int withdrawFunds(int withdraw){
+    public double withdrawFunds(double withdraw){
         if(withdraw < balance || withdraw == balance){
             balance -= withdraw;
             System.out.println("\n" +
