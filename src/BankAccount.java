@@ -1,17 +1,23 @@
 public class BankAccount {
 
     // fields //
-    private double balance;
-    private String customerName, email, accountNumber, phoneNumber;
+    public double balance;
+    public String customerName, email, accountNumber, phoneNumber;
 
     // Constructors //
 
     public BankAccount(){
-        System.out.println("Empty constructor called");
+        this(0, "Default name", "Default email",
+                "Default accountNumber", "Default phoneNumber");
     }
 
-    public BankAccount(double balance, String customerName, String email, String accountNumber, String phoneNumber){
-
+    public BankAccount(double balance, String customerName, String email,
+                       String accountNumber, String phoneNumber){
+        this.balance = balance;
+        this.accountNumber = accountNumber;
+        this.email = email;
+        this.accountNumber = accountNumber;
+        this.phoneNumber = phoneNumber;
     }
 
     // methods //
@@ -36,19 +42,19 @@ public class BankAccount {
 
         // getters //
 
-    public String getAccountNumber(String accountNumber){
+    public String getAccountNumber(){
         return accountNumber;
     }
-    public double getBalance(double balance){
+    public double getBalance(){
         return balance;
     }
-    public String getPhoneNumber(String phoneNumber){
+    public String getPhoneNumber(){
         return phoneNumber;
     }
-    public String getCustomNumber(String customerName){
+    public String getCustomNumber(){
         return customerName;
     }
-    public String getEmail(String email){
+    public String getEmail(){
         return email;
     }
 
