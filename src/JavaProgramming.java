@@ -2,9 +2,12 @@
 public class JavaProgramming {
 
     public static void main(String[] args){
-        Car porsche = new Car();
-        Car holden = new Car();
-        porsche.setModel("Carrera");
-        System.out.println("Model is " + porsche.getModel());
+
+        // Bank Account
+
+        BankAccount alexander = new BankAccount();
+        alexander.setBalance(12000);
+        alexander.depositFunds(5000);
+        alexander.withdrawFunds(15000);
     }
 }
