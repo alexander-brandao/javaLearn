@@ -9,7 +9,7 @@ public class JavaProgramming {
                 4,1,20,"long silky");
 
         dog.walk();
-        dog.run();
+        // dog.run();
 
     }
 

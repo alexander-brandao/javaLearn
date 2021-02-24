@@ -9,8 +9,10 @@ public class Dog extends Animal {
     private String coat;
 
 
-    // Constructors and Inheritance
+    // Constructors
     public Dog(String name,int size, int weight, int eyes, int legs, int tail, int teeth, String coat) {
+
+        // Inheritance
         super(name, 1, 1, size, weight);
         this.eyes = eyes;
         this.legs = legs;
@@ -48,6 +50,7 @@ public class Dog extends Animal {
     }
     @Override
     public void move(int speed) {
+        System.out.println("Dog.move() called");
         moveLegs(speed);
         super.move(speed);
 
