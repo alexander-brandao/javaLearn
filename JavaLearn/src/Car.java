@@ -1,25 +1,38 @@
-public class Car {
+public class Car extends Vehicle {
 
-        // fields
+    //** fields **//
+
     private int doors;
     private int wheels;
-    private String model;
-    private String engine;
-    private String colour;
+    private int gears;
+    private boolean isManual;
 
-        // methods
+    private int currentGear;
 
-    public void setModel(String model){
-        String validModel = model.toLowerCase();
-        if( validModel.equals("porsche") || validModel.equals("holden")){
-            this.model = model;
-        } else{
-            this.model = "Unknown";
-        }
+    //** Constructor **//
 
+    public Car(String name, String size, int doors, int wheels,
+               int gears, boolean isManual) {
+        super(name, size);
+        this.doors = doors;
+        this.wheels = wheels;
+        this.gears = gears;
+        this.isManual = isManual;
+        this.currentGear = 1;
+    }
+    //** methods **//
+
+    public void ChangeGear(int currentGear) {
+        this.currentGear = currentGear;
+        System.out.println("Car.setCurrentGear(): Change to " + this.currentGear + "gear.");
+    }
+    public void changeVelocity(int speed, int direction) {
+        move(speed, direction);
+        System.out.println("Car.changeVelocity() : Velocity " + speed + "direction " + direction);
     }
 
-    public String getModel(){
-        return this.model;
-    }
+
+
+
+
 }
