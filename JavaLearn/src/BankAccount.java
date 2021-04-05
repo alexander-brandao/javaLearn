@@ -1,8 +1,8 @@
 public class BankAccount {
 
     // fields //
-    public double balance;
-    public String customerName, email, accountNumber, phoneNumber;
+    private double balance;
+    private String customerName, email, accountNumber, phoneNumber;
 
     // Constructors //
 
@@ -27,9 +27,7 @@ public class BankAccount {
     public void setAccountNumber(String accountNumber){
         this.accountNumber = accountNumber;
     }
-    public void setBalance(double balance){
-        this.balance = balance;
-    }
+
     public void setPhoneNumber(String phoneNumber){
         this.phoneNumber = phoneNumber;
     }
