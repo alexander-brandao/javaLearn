@@ -2,6 +2,29 @@ import java.lang.String;
 public class JavaProgramming {
 
     public static void main(String[] args){
+
+        Wall wall1 = new Wall("west");
+        Wall wall2 = new Wall("north");
+        Wall wall3 = new Wall("south");
+        Wall wall4 = new Wall("east");
+
+        Ceiling ceiling = new Ceiling(12,55);
+
+        Bed bed = new Bed("morden",4,3,2,1);
+
+        Lamp lamp = new Lamp("Classic",false,7);
+
+        // create the Bedroom
+
+        Bedroom bedroom = new Bedroom("Alex", wall1,wall2,wall3,wall4,ceiling,bed,lamp);
+        bedroom.makeBed();
+
+        bedroom.getLamp().turnOn();
+    }
+
+
+    /*
+
     Dimensions dimensions = new Dimensions(20,20,5);
 
     Case theCase = new Case("220B", "Dell",
@@ -14,13 +37,10 @@ public class JavaProgramming {
             4,4,"v2.44");
 
     PC thePC = new PC(theCase,theMoniter,theMotherboard);
-
-    thePC.getMonitor().drawPixelAt(1500,1200,"red");
-    thePC.getMotherboard().loadProgram("Windows 1.0");
-    }
+    thePC.powerUp();
 
 
-    /*
+
     Outlander outlander = new Outlander(36);
     outlander.steer(45);
     outlander.accelerate(30);
