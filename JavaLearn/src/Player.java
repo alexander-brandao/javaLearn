@@ -10,6 +10,11 @@ public class Player {
         this.health = this.health - damage;
         if(this.health <= 0){
             System.out.println("Player knocked out");
+            // REDUCE number of lives remaining for the player
         }
+    }
+
+    public int helthRemaining(){
+        return this.health;
     }
 }
