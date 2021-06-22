@@ -2,7 +2,14 @@ import java.lang.String;
 public class JavaProgramming {
 
     public static void main(String[] args){
+    Player player = new Player();
+    player.name = "Tim";
+    player.weapon = "Sword";
+    player.health = 20;
 
+    int damage = 10;
+    player.loseHealth(damage);
+        System.out.println("Remaining health = " + player.helthRemaining());
 
     }
 
