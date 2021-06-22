@@ -3,7 +3,14 @@ public class JavaProgramming {
 
     public static void main(String[] args){
 
-        Wall wall1 = new Wall("west");
+
+    }
+
+
+
+
+
+    /* Wall wall1 = new Wall("west");
         Wall wall2 = new Wall("north");
         Wall wall3 = new Wall("south");
         Wall wall4 = new Wall("east");
@@ -20,8 +27,8 @@ public class JavaProgramming {
         bedroom.makeBed();
 
         bedroom.getLamp().turnOn();
-    }
 
+     */
 
     /*
 
