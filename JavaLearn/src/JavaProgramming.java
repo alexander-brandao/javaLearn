@@ -2,6 +2,18 @@ import java.lang.String;
 public class JavaProgramming {
 
     public static void main(String[] args){
+
+
+        // criando um objeto Enhanced Player
+        EnhancedPlayer player = new EnhancedPlayer("Alex",50,"Sword");
+        System.out.println("Inicial health is " + player.getHealth());
+    }
+
+
+
+
+
+    /*
     Player player = new Player();
     player.name = "Tim";
     player.weapon = "Sword";
@@ -9,15 +21,13 @@ public class JavaProgramming {
 
     int damage = 10;
     player.loseHealth(damage);
-        System.out.println("Remaining health = " + player.helthRemaining());
+    System.out.println("Remaining health = " + player.helthRemaining());
 
-    }
+    damage = 11;
+    player.loseHealth(damage);
+    System.out.println("Remaining health = " + player.helthRemaining());
 
-
-
-
-
-    /* Wall wall1 = new Wall("west");
+        Wall wall1 = new Wall("west");
         Wall wall2 = new Wall("north");
         Wall wall3 = new Wall("south");
         Wall wall4 = new Wall("east");

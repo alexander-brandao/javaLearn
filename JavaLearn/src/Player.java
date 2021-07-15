@@ -1,7 +1,7 @@
 public class Player {
 
     // fields
-    public String name;
+    public String fullName;
     public int health;
     public String weapon;
 
