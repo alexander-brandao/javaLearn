@@ -4,12 +4,15 @@ public class JavaProgramming {
     public static void main(String[] args){
 
 
-        // criando um objeto Enhanced Player
-        EnhancedPlayer player = new EnhancedPlayer("Alex",50,"Sword");
-        System.out.println("Inicial health is " + player.getHealth());
-        // year
+
     }
 
+
+
+     /* criando um objeto Enhanced Player
+        EnhancedPlayer player = new EnhancedPlayer("Alex",50,"Sword");
+        System.out.println("Inicial health is " + player.getHealth());
+        // year */
 
 
 
