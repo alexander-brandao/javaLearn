@@ -7,7 +7,7 @@ public class Conta {
     private String nome;
 
     // Constructor
-    public Conta(int numero, double saldo, double limite, String nome) {
+    public Conta() {
         this.numero = numero;
         this.saldo = saldo;
         this.limite = limite;
@@ -27,6 +27,6 @@ public class Conta {
     void deposita(double quantidade){
         this.saldo += quantidade;
     }
-    // okayv
+
 
 }
