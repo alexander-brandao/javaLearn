@@ -2,7 +2,7 @@ public class Conta {
 
     //fields
     private int numero;
-    private double saldo;
+    public double saldo;
     private double limite;
     private String nome;
 
@@ -24,7 +24,7 @@ public class Conta {
         }
     }
 
-    void deposita(double quantidade){
+    public void deposita(double quantidade){
         this.saldo += quantidade;
     }
 
