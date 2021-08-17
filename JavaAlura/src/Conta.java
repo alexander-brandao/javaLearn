@@ -4,7 +4,7 @@ public class Conta {
     private int numero;
     public double saldo;
     private double limite;
-    private String nome;
+    public String nome;
 
     // Constructor
     public Conta() {
