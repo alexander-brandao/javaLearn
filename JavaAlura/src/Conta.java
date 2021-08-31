@@ -28,5 +28,15 @@ public class Conta {
         this.saldo += quantidade;
     }
 
+    public boolean transferePara(Conta destino, double valor){
+        boolean retirou = this.saca(valor);
+        if(retirou == true){
+            destino.deposita(valor);
+            return true;
+        } else {
+            System.out.println("Não foi possivel fazer a tranferencia por falta de saldo.");
+            return false;
+        }
+    }
 
 }
