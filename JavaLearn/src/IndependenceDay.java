@@ -1,12 +1,11 @@
 public class IndependenceDay extends Movie{
     //constructor
-    public IndependenceDay(String name){
+    public IndependenceDay(){
         super("Independence Day");
     }
 
     // methods
-    @Override
-    public String plot() {
+    public String plot(){
         return "Aliens attempt to take over planet earth";
     }
 }
