@@ -9,7 +9,7 @@ public class Main {
         private int currentVelocity;
 
         //constructor
-        public Carro(boolean engine, int cylinders, int wheels, int doors, boolean isManual, int currentVelocity) {
+        public Carro(int cylinders, int doors, boolean isManual, int currentVelocity) {
             this.engine = true;
             this.cylinders = cylinders;
             this.wheels = 4;
@@ -29,6 +29,9 @@ public class Main {
 
         public boolean isManual() {
             return isManual;
+        }
+        public int currentVelocity(){
+            return currentVelocity;
         }
 
         // methods
@@ -67,7 +70,74 @@ public class Main {
             this.color = "black";
         }
 
+        @Override
+        public void startEngine(boolean engine) {
+            super.startEngine(engine);
+        }
 
+        @Override
+        public void brake(int currentVelocity) {
+            super.brake(currentVelocity);
+        }
+
+        @Override
+        public void accelerate(int currentVelocity) {
+            super.accelerate(currentVelocity);
+        }
+    }
+    public class Camaro extends Carro{
+        //fields
+        private String color;
+
+        //constructor
+        public Camaro(boolean engine, int cylinders, int wheels, int doors,
+                      boolean isManual, int currentVelocity, String color) {
+            super(true, 8, wheels, 2, false, currentVelocity);
+            this.color = "Yellow";
+        }
+        //methods
+
+        @Override
+        public void startEngine(boolean engine) {
+            super.startEngine(engine);
+        }
+
+        @Override
+        public void brake(int currentVelocity) {
+            super.brake(currentVelocity);
+        }
+
+        @Override
+        public void accelerate(int currentVelocity) {
+            super.accelerate(currentVelocity);
+        }
+    }
+    public class Tesla extends Carro{
+        //fields
+        private String color;
+
+        //contrcutor
+
+        public Tesla(boolean engine, int cylinders, int wheels,
+                     int doors, boolean isManual, int currentVelocity, String color) {
+            super(true, 6, wheels, 2, false, currentVelocity);
+            this.color = "white";
+        }
+
+        @Override
+        public void startEngine(boolean engine) {
+            super.startEngine(engine);
+        }
+
+        @Override
+        public void brake(int currentVelocity) {
+            super.brake(currentVelocity);
+        }
+
+        @Override
+        public void accelerate(int currentVelocity) {
+            super.accelerate(currentVelocity);
+        }
     }
     public static void main(String[] args){
 
