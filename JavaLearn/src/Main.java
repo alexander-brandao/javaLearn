@@ -27,10 +27,11 @@ public class Main {
             return doors;
         }
 
-        public boolean isManual() {
+        public boolean getIsManual() {
             return isManual;
         }
-        public int currentVelocity(){
+
+        public int getCurrentVelocity(){
             return currentVelocity;
         }
 
@@ -64,10 +65,9 @@ public class Main {
         //fields
         private String color;
 
-        public Mustang(boolean engine, int cylinders, int wheels, int doors, boolean isManual,
-                       int currentVelocity, String color) {
-            super(true, 8, wheels, 2, false, currentVelocity);
-            this.color = "black";
+        public Mustang(int cylinders, int doors, boolean isManual, int currentVelocity, String color) {
+            super(8, 2, true, currentVelocity);
+            this.color = "Black";
         }
 
         @Override
@@ -90,9 +90,9 @@ public class Main {
         private String color;
 
         //constructor
-        public Camaro(boolean engine, int cylinders, int wheels, int doors,
+        public Camaro(int cylinders, int doors,
                       boolean isManual, int currentVelocity, String color) {
-            super(true, 8, wheels, 2, false, currentVelocity);
+            super(8, 8, true, currentVelocity);
             this.color = "Yellow";
         }
         //methods
@@ -116,11 +116,10 @@ public class Main {
         //fields
         private String color;
 
-        //contrcutor
+        //constructor
 
-        public Tesla(boolean engine, int cylinders, int wheels,
-                     int doors, boolean isManual, int currentVelocity, String color) {
-            super(true, 6, wheels, 2, false, currentVelocity);
+        public Tesla(int cylinders,int doors, boolean isManual, int currentVelocity, String color) {
+            super(8, 2,true, currentVelocity);
             this.color = "white";
         }
 
