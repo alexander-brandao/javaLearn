@@ -12,6 +12,9 @@ public class Main {
         scanner.nextLine();
 
         int[] returnedArray = readIntegers(count);
+        int returnedMin = findMin(returnedArray);
+
+        System.out.println("min = " + returnedMin);
     }
 
     //method that read integers
@@ -29,4 +32,20 @@ public class Main {
         }
         return array;
     }
+
+    //method that find the min value in the array
+    private static int findMin(int[] array){
+
+        int min = Integer.MAX_VALUE;
+
+        for(int i=0; i<array.length; i++){
+            int value = array[i];
+            if(value < min){
+                min = value;
+            }
+        }
+        return min;
+    }
+
+
 }
