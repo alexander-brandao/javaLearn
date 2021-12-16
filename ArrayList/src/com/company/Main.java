@@ -27,19 +27,19 @@ public class Main {
                         break;
 
                     case 2:
-                        groceryList.addGroceryList();
+                        addItem();
                         break;
 
                     case 3:
-                        groceryList.modifyGroceryItem();
+                        modifyItem();
                         break;
 
                     case 4:
-                        groceryList.removeGroceryItem();
+                        removeItem();
                         break;
 
                     case 5:
-                        groceryList.findItem();
+                        searchForItem();
                         break;
 
                     case 6:
@@ -49,4 +49,16 @@ public class Main {
             }
 
     }
+    public static void printInstructions(){
+        System.out.println("\nPress");
+        System.out.println("\t 0 - To print choice options.");
+        System.out.println("\t 1 - To print the list of grocery items.");
+        System.out.println("\t 2 - To add an item to the list.");
+        System.out.println("\t 3 - To modify an item in the list.");
+        System.out.println("\t 4 - To remove an item from the list.");
+        System.out.println("\t 5 - To search for an item in the list.");
+        System.out.println("\t 6 - To quit the application.");
+    }
+
+
 }
